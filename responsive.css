@@ -1,0 +1,478 @@
+/*----------JASMIN ALIMANOVIC-------------------*/
+
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    width: 70%;
+  }
+  .nav {
+    justify-content: space-around;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+  }
+  .nav-list {
+    background-color: #2557b3;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    width: 50%;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    animation: none;
+
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav-list li {
+    opacity: 0;
+    height: 20px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px);
+    }
+  }
+
+  .burger-anim .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger-anim .line2 {
+    opacity: 0;
+  }
+  .burger-anim .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #main-container {
+    width: 100vw;
+  }
+  /*   HOME    */
+  #home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #home h1 {
+    font-size: 48px;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    /* transform: translate(-50%, -70%); */
+  }
+  #home h2 {
+    font-size: 26px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+  }
+  #logo-naslov {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  /*    ABOUT   */
+  #about {
+    padding-top: 25px;
+    height: 60vh;
+    padding: 25px;
+  }
+  #about p {
+    padding-top: 0;
+    font-size: 11px;
+    height: 99%;
+    overflow: hidden;
+  }
+  .col1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .col2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #projects {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .project {
+    overflow: hidden;
+    padding: 10px;
+    width: 45%;
+    height: 40%;
+    margin: auto;
+  }
+  .project p {
+    font-size: 12px;
+  }
+
+  #photos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 10vw);
+  }
+  .photo1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .photo2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .photo3 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .photo4 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+  .photo5 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+  .photo6 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  .photo7 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  #form {
+    margin-top: 15px;
+    padding: 10px;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+    padding: 15px;
+    padding-top: 45px;
+    height: 60%;
+  }
+  form input {
+    width: 60%;
+  }
+  .log-in {
+    height: 50%;
+    width: 100%;
+  }
+  .log-in form input {
+    width: 60%;
+  }
+  .log-in form {
+    height: 100%;
+  }
+  #footer {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer a img {
+    width: 100px;
+    height: 100px;
+  }
+  /* .footer-img {
+    display: none;
+  } */
+  #footer div a i {
+    width: 15px;
+  }
+  #footer div {
+    width: 50%;
+  }
+  #footer div p {
+    width: 100%;
+  }
+  .copyR {
+    left: 0;
+    top: 0;
+  }
+  .socNet {
+    right: 0;
+  }
+  .awesome {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav {
+    justify-content: space-around;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+  }
+  .nav-list {
+    background-color: #2557b3;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    width: 50%;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: none;
+    padding-left: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-list li {
+    opacity: 0;
+    height: 20px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .burger-anim .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger-anim .line2 {
+    opacity: 0;
+  }
+  .burger-anim .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #main-container {
+    width: 100vw;
+  }
+  /*H   HOME    */
+  #home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #home h1 {
+    font-size: 48px;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+  }
+  #home h2 {
+    font-size: 26px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+  }
+  #logo-naslov {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  /*    ABOUT   */
+  #about {
+    padding-top: 25px;
+    height: 115vh;
+    padding: 25px;
+  }
+  #about p {
+    padding-top: 0;
+    font-size: 11px;
+    height: 99%;
+    overflow: hidden;
+  }
+  .col1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .col2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*    Projects   */
+
+  #projects {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .project {
+    overflow: hidden;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+  }
+  .project p {
+    font-size: 12px;
+  }
+
+  #photos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 10vw);
+  }
+  .photo1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .photo2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .photo3 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .photo4 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+  .photo5 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+  .photo6 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  .photo7 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  #form {
+    margin-top: 15px;
+    padding: 10px;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+    padding: 15px;
+    padding-top: 45px;
+    height: 60%;
+  }
+  form input {
+    width: 60%;
+  }
+  .log-in {
+    height: 50%;
+    width: 100%;
+  }
+  .log-in form input {
+    width: 60%;
+  }
+  #footer {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer a img {
+    width: 30px;
+    height: 60px;
+  }
+  /* .footer-img {
+    display: none;
+  } */
+  #footer div a i {
+    width: 15px;
+  }
+  #footer div {
+    width: 50%;
+  }
+  #footer div p {
+    width: 100%;
+  }
+  .copyR {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+  }
+  .socNet {
+    right: 0;
+  }
+  .awesome {
+    display: flex;
+    justify-content: space-around;
+  }
+}
